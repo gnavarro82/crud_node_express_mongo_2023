@@ -1,0 +1,55 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h3>Guardar Tarea</h3>
+<form action="/task/add" method="post">
+
+    {{! Title Input }}
+    <div class="mb-3">
+      <label for="title">Escribe un titulo:</label>
+      <input
+        id="title"
+        class="form-control rounded-0 bg-dark text-white"
+        type="text"
+        name="title"
+        placeholder="Titulo de la tarea"
+        autofocus
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="mb-3">
+      <label for="description">Descripcion</label>
+      <textarea
+        class="form-control rounded-0 bg-dark text-white"
+        name="description"
+        cols="80"
+        placeholder="Escribe una Descripcion"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+  </form>
+</div>
+
+
+
+
+{{!-- 
+<form action="/task/add" method="post">
+
+  <div>
+    <label for="tile">Escribe un titulo</label>
+    <input type="text" name="title" placeholder="Titulo" id="title" />
+  </div>
+
+  <div>
+    <label for="description">Escribe una descripcion </label>
+    <textarea
+      name="description"
+      id="description"
+      placeholder="descripcion"
+    ></textarea>
+
+  </div>
+
+  <button >Guardar</button>
+</form>  --}}
